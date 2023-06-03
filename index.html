@@ -5,44 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+        
+        }
+        .nav{
+            display: flex;
+        justify-content: center;
+        gap: 100px;
+        }
+        .nav-item{
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #7D7D7D;
+        }
+       .images{
+        justify-content: center;
+        gap: 65px;
+        margin-top: 92px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 148px;
+        margin-right: 147px;
+        margin-bottom: 62px;
+    
+       
+       }
+       .images-items{
+        width: 420px;
+       }
+       section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+       button{
+        width: 165px;
+        height: 60px;
+        border: 1px solid #626262;
+        cursor: pointer;
+       }
+    </style>
 </head>
 <body>
     <header>
-        <ul>
-            <li>Lifestyle</li>
-            <li>Photodiary</li>
-            <li>Music</li>
-            <li>Travel</li>
+        <ul class="nav">
+            <li class="nav-item">Lifestyle</li>
+            <li class="nav-item">Photodiary</li>
+            <li class="nav-item">Music </li>
+            <li class="nav-item">Travel</li>
         </ul>
     </header>
     <section>
-        <ul>
-            <li>
-                <img src="https://volodymyripatenko.github.io/figma/1.png" alt="">
+        <ul class="images">
+            <li class="images-items">
+                <img  src="https://volodymyripatenko.github.io/figma/1.png" alt="">
                 <p>LIFESTYLE</p>
                 <h2>More than just a music festival </h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
             </li>
 
-            <li>
-                <img src="https://volodymyripatenko.github.io/figma/2.png" alt="">
+            <li class="images-items">
+                <img  src="https://volodymyripatenko.github.io/figma/2.png" alt="">
                 <h2>Life tastes better with coffee</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
             </li>
 
-            <li>
+            <li class="images-items">
                 <img src="https://volodymyripatenko.github.io/figma/3.png" alt="">
                 <h2>American dream</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
             </li>
 
-            <li>
+            <li class="images-items">
                 <img src="https://volodymyripatenko.github.io/figma/4.png" alt="">
                 <h2>A day exploring the Alps</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
             </li>
         </ul>
-        <button></button>
+        <button>Load More</button>
     </section>
 </body>
 </html>
